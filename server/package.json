@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "lecture project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dylandorsey/kochab-get-requests.git"
+  },
+  "author": "dylan dorsey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dylandorsey/kochab-get-requests/issues"
+  },
+  "homepage": "https://github.com/dylandorsey/kochab-get-requests#readme",
+  "dependencies": {
+    "npm": "^5.8.0"
+  }
+}
