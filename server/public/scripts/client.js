@@ -12,4 +12,17 @@ function onReady() {
         console.log('promise ring');
         console.log(response);
     });
+    $('#quoteBtn').on('click', generateQuote);
+}
+
+function generateQuote(){
+    $.ajax({
+        type: 'GET',
+        url: '/random-quote'
+    })
+    .then(function(response) {
+        // console.log('promise ring');
+        $('#quoteOutput').text(response.quote);
+    });
+
 }
