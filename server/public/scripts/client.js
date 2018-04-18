@@ -4,10 +4,12 @@ $(document).ready(onReady);
 
 function onReady() {
     console.log('jQuery is loaded');
-    appendSomething();
-}
-
-function appendSomething() {
-    console.log('append something called');
-    $('.header').append('<h1>Famous Quotes</h1>');
+    $.ajax({
+        type: 'GET',
+        url: '/all-quotes'
+    })
+    .then(function(response) {
+        console.log('promise ring');
+        console.log(response);
+    });
 }

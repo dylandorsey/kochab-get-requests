@@ -2,8 +2,7 @@
 const express = require('express'); // Import express
 const app = express(); // assign express as a function to a variable
 const PORT = 5000; // Used to direct traffic
-
-allQuotes = require('./all-quotes.js');
+const allQuotes = require('./all-quotes.js');
 
 app.use(express.static('server/public'));
 
