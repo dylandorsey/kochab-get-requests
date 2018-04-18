@@ -5,9 +5,11 @@ const PORT = 5000; // Used to direct traffic
 
 allQuotes = require('./all-quotes.js');
 
+app.use(express.static('server/public'));
+
 app.get('/', (req, res) => { // request/response function
     console.log('yep it worked');
-    res.send('Happy Wednesday'); // appends a message to the DOM
+    res.send('Hey this is working'); // appends a message to the DOM
 });
 
 app.get('/all-quotes', (req, res) => {
@@ -23,3 +25,4 @@ app.get('/random-quote', (req, res) => {
     console.log(randomNumber);
     res.send(allQuotes[randomNumber]);
 });
+
